@@ -10,6 +10,10 @@
       "outputs": [".cache/.prettiercache"],
       "outputLogs": "new-only"
     },
+    "lint": {
+      "dependsOn": ["^lint"],
+      "outputs": [".cache/.eslintcache"]
+    },
     "typecheck": {
       "dependsOn": ["^typecheck"],
       "outputs": [".cache/tsbuildinfo.json"]

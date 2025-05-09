@@ -1,0 +1,4 @@
+{
+  "extends": "@inkk/tsconfig/base.json",
+  "include": ["*.js", "types.d.ts"]
+}
