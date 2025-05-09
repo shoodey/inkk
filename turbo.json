@@ -2,8 +2,16 @@
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
   "tasks": {
+    "format:self": {
+      "outputs": [".cache/.prettiercache"],
+      "outputLogs": "new-only"
+    },
+    "//#format:self": {
+      "outputs": [".cache/.prettiercache"],
+      "outputLogs": "new-only"
+    },
     "typecheck": {
-      "dependsOn": ["^typecheck", "^build"],
+      "dependsOn": ["^typecheck"],
       "outputs": [".cache/tsbuildinfo.json"]
     },
     "clean": {

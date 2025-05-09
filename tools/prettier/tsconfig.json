@@ -1,0 +1,4 @@
+{
+  "extends": "@inkk/tsconfig/base.json",
+  "include": ["prettier.config.js"]
+}

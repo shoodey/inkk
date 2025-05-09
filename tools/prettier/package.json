@@ -1,0 +1,21 @@
+{
+  "name": "@inkk/prettier-config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./prettier.config.js"
+  },
+  "scripts": {
+    "format:self": "prettier --check . --ignore-path ../../.gitignore --ignore-path ../../.prettierignore",
+    "typecheck": "tsc",
+    "clean": "git clean -xdf .cache .turbo node_modules"
+  },
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1"
+  },
+  "devDependencies": {
+    "@inkk/tsconfig": "workspace:*",
+    "prettier": "catalog:"
+  }
+}
