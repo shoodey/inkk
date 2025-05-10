@@ -1,0 +1,30 @@
+{
+  "name": "@inkk/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tauri dev",
+    "dev:vite": "vite",
+    "build": "tauri build",
+    "build:vite": "vite build",
+    "format:self": "prettier --check . !tauri/gen --ignore-path ../../.gitignore --ignore-path ../../.prettierignore",
+    "lint": "eslint",
+    "typecheck": "tsc",
+    "clean": "git clean -xdf .cache .turbo dist node_modules tauri/target"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.5.0",
+    "react": "catalog:react19",
+    "react-dom": "catalog:react19"
+  },
+  "devDependencies": {
+    "@inkk/eslint-config": "workspace:*",
+    "@inkk/tsconfig": "workspace:*",
+    "@tauri-apps/cli": "^2.5.0",
+    "@types/react": "catalog:react19",
+    "@types/react-dom": "catalog:react19",
+    "@vitejs/plugin-react-swc": "^3.9.0",
+    "vite": "^6.3.5"
+  }
+}

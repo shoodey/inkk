@@ -2,6 +2,11 @@
 .turbo
 .cache
 
+# Desktop (Tauri)
+dist/
+**/target/
+**/gen/schemas/
+
 # Dependencies
 node_modules
 

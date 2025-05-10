@@ -1,0 +1,17 @@
+{
+  "extends": "@inkk/tsconfig/base.json",
+  "compilerOptions": {
+    /** Path Resolution */
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    /** Module/Runtime */
+    "module": "ESNext",
+    "lib": ["ES2022", "DOM"],
+    /* Bundler mode */
+    "allowImportingTsExtensions": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}

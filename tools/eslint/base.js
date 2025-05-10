@@ -35,5 +35,5 @@ export default tseslint.config(
             "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
             "@typescript-eslint/only-throw-error": "off",
         },
-    },
+    }
 );

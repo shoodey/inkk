@@ -7,6 +7,9 @@
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky",
     "postinstall": "pnpm lint:ws",
+    "dev": "turbo watch dev --continue",
+    "dev:desktop": "turbo watch dev --filter @inkk/desktop...",
+    "build": "turbo run build",
     "format:self": "prettier --check . !tools --ignore-path .gitignore --ignore-path .prettierignore",
     "format": "turbo run format:self --continue -- --cache --cache-location .cache/.prettiercache",
     "format:fix": "turbo run format:self --continue -- --write --cache --cache-location .cache/.prettiercache",
@@ -25,6 +28,7 @@
     "husky": "^9.1.7",
     "turbo": "^2.5.3"
   },
+  "prettier": "@inkk/prettier-config",
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"

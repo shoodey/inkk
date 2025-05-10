@@ -1,0 +1,16 @@
+{
+  // Link Rust projects
+  "rust-analyzer.linkedProjects": ["./apps/desktop/tauri/Cargo.toml"],
+  // Enforce project's TypeScript version
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // Ensure imports are non-relative and use path aliases
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  // Prevent generated files from being edited
+  "files.readonlyInclude": {
+    "**/gen/schemas/**": true
+  },
+  // Prevent generated files from the file system watcher
+  "files.watcherExclude": {
+    "**/gen/schemas/**": true
+  }
+}
